@@ -1,0 +1,43 @@
+.container {
+  padding: 8px 12px;
+  background-color: var(--bg-sidebar);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-search);
+  border-radius: 8px;
+  height: 35px;
+  padding: 0 12px;
+  gap: 12px;
+  transition: background-color 0.2s;
+}
+
+.searchBox:focus-within {
+  background-color: var(--bg-main);
+  box-shadow: inset 0 0 0 1px var(--accent-color);
+}
+
+.icon {
+  color: var(--icon-color);
+}
+
+.searchBox:focus-within .icon {
+  color: var(--accent-color);
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+.input::placeholder {
+  color: var(--text-secondary);
+}
